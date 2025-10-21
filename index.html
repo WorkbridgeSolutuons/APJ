@@ -1,0 +1,279 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>Workbridge Solutions — Connecting Skills with Industries</title>
+  <meta name="description" content="Workbridge Solutions - Manpower recruitment, training & placement support for MSMEs. Connect with skilled ITI graduates and vocational talent.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700;800&display=swap" rel="stylesheet">
+  <style>
+    :root{
+      --accent:#0b66ff; /* bold blue */
+      --dark:#0b1220;
+      --muted:#6b7280;
+      --card:#ffffff;
+      --bg:#f6f8fb;
+      --maxw:1100px;
+    }
+    *{box-sizing:border-box}
+    body{font-family:'Poppins',system-ui,Arial; margin:0; color:var(--dark); background:var(--bg); -webkit-font-smoothing:antialiased}
+    header{background:linear-gradient(90deg, #081029 0%, #0b1220 100%); color:#fff; position:sticky; top:0; z-index:60; box-shadow:0 6px 18px rgba(9,12,20,0.12)}
+    .navwrap{max-width:var(--maxw); margin:0 auto; display:flex; align-items:center; justify-content:space-between; padding:18px}
+    .brand{display:flex; gap:12px; align-items:center}
+    .logo{width:52px; height:52px; background:linear-gradient(135deg,var(--accent),#2b9cff); border-radius:10px; display:flex; align-items:center; justify-content:center; font-weight:800; color:white; font-size:18px}
+    nav a{color:#cfe1ff; margin-left:18px; text-decoration:none; font-weight:600}
+    .cta{background:#fff; color:var(--dark); padding:10px 14px; border-radius:8px; text-decoration:none; font-weight:700}
+    main{max-width:var(--maxw); margin:36px auto; padding:0 18px}
+
+    /* Hero */
+    .hero{display:grid; grid-template-columns:1fr 420px; gap:28px; align-items:center}
+    .hero .left h1{font-size:34px; margin:0 0 12px; line-height:1.03}
+    .hero p.lead{color:var(--muted); margin:0 0 18px}
+    .features{display:flex; gap:12px; flex-wrap:wrap}
+    .card{background:var(--card); border-radius:12px; padding:18px; box-shadow:0 8px 24px rgba(11,18,32,0.06)}
+
+    /* Services grid */
+    .services{display:grid; grid-template-columns:repeat(3,1fr); gap:16px; margin-top:22px}
+    .services h3{margin:0 0 8px}
+
+    /* Sidebar hero */
+    .contactcard{padding:18px}
+    .btn{display:inline-block; padding:12px 14px; border-radius:8px; text-decoration:none; font-weight:700}
+    .btn-primary{background:var(--accent); color:white}
+    .btn-whatsapp{background:#25d366; color:white}
+
+    /* Sections */
+    section{margin:36px 0}
+    .two-col{display:grid; grid-template-columns:1fr 1fr; gap:20px}
+    .list{margin:12px 0 0; padding-left:18px; color:var(--muted)}
+
+    footer{max-width:var(--maxw); margin:26px auto; padding:26px 18px; color:var(--muted); display:flex; justify-content:space-between; align-items:center}
+
+    /* Responsive */
+    @media (max-width:900px){
+      .hero{grid-template-columns:1fr}
+      .services{grid-template-columns:1fr}
+      .two-col{grid-template-columns:1fr}
+      nav a{display:none}
+      .navwrap{padding:12px}
+    }
+
+    /* Page routing */
+    .page{display:none}
+    .page.active{display:block}
+
+    /* Bold headings */
+    h2{font-size:22px; margin:0 0 12px; font-weight:800}
+    h3{font-size:16px; color:var(--dark); font-weight:700}
+
+    /* Simple form */
+    .contact-form input,.contact-form textarea{width:100%; padding:10px; margin:8px 0; border-radius:8px; border:1px solid #e6e9f0}
+    .small{font-size:13px;color:var(--muted)}
+  </style>
+</head>
+<body>
+  <header>
+    <div class="navwrap">
+      <div class="brand">
+        <div class="logo">W</div>
+        <div>
+          <div style="font-weight:800">Workbridge Solutions</div>
+          <div style="font-size:12px;color:#cfe1ff">Connecting Skills with Industries</div>
+        </div>
+      </div>
+      <nav>
+        <a href="#home" data-link>Home</a>
+        <a href="#about" data-link>About</a>
+        <a href="#services" data-link>Services</a>
+        <a href="#placements" data-link>Placements</a>
+        <a href="#careers" data-link>Register</a>
+        <a href="#contact" data-link>Contact</a>
+        <a class="cta" href="mailto:Workbridgesolutions@gmail.com">Get in touch</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <!-- Home -->
+    <section id="home" class="page active">
+      <div class="hero">
+        <div class="left">
+          <h1>Bridging industries with trained technical talent</h1>
+          <p class="lead">We help MSMEs access reliable, job-ready manpower from ITIs and vocational institutes — recruitment, short-term upskilling, and placement support under one roof.</p>
+          <div class="features">
+            <div class="card">
+              <h3>Why Workbridge?</h3>
+              <p class="small">Faster hiring, verified candidates, industry-aligned training, and end-to-end placement support.</p>
+            </div>
+            <div class="card">
+              <h3>For Employers</h3>
+              <p class="small">Hire screened technicians, apprentices, and entry-level staff with project-ready skills.</p>
+            </div>
+            <div class="card">
+              <h3>For Candidates</h3>
+              <p class="small">Get placed quickly with on-site training and apprenticeship pathways.</p>
+            </div>
+          </div>
+        </div>
+
+        <aside class="card contactcard">
+          <h3>Quick Contact</h3>
+          <p class="small">Call us: <a href="tel:+918448365477">+91 84483 65477</a></p>
+          <p class="small">Email: <a href="mailto:Workbridgesolutions@gmail.com">Workbridgesolutions@gmail.com</a></p>
+          <div style="margin-top:12px;display:flex;gap:8px">
+            <a class="btn btn-primary" href="#services" data-link>Our Services</a>
+            <a class="btn btn-whatsapp" href="https://wa.me/918448365477" target="_blank">WhatsApp</a>
+          </div>
+        </aside>
+      </div>
+    </section>
+
+    <!-- About -->
+    <section id="about" class="page">
+      <div class="card">
+        <h2>About Workbridge Solutions</h2>
+        <p>Workbridge Solutions connects small and medium enterprises (MSMEs) with trained technical talent from ITIs and vocational institutions. We provide end-to-end recruitment — from candidate sourcing and verification to short-term industry-specific upskilling and post-placement support. Our mission is to make quality technical manpower accessible to local industries while creating sustainable employment pathways for youth.</p>
+        <div class="two-col" style="margin-top:18px">
+          <div>
+            <h3>Our Approach</h3>
+            <ul class="list">
+              <li>Partner with local ITIs and vocational centres</li>
+              <li>Skill mapping and short-induction training</li>
+              <li>Placement & apprenticeship facilitation</li>
+            </ul>
+          </div>
+          <div>
+            <h3>Vision & Values</h3>
+            <ul class="list">
+              <li>Trust, quality, and local empowerment</li>
+              <li>Transparent candidate verification</li>
+              <li>Partner-first with MSMEs</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Services -->
+    <section id="services" class="page">
+      <div class="card">
+        <h2>Services</h2>
+        <div class="services">
+          <div class="card">
+            <h3>Manpower Recruitment</h3>
+            <p class="small">Screening, technical shortlisting, and placement of ITI graduates and vocational trainees for MSMEs.</p>
+          </div>
+          <div class="card">
+            <h3>Technical Training</h3>
+            <p class="small">Short induction courses aligned to industry needs — safety, machine handling, basic maintenance.</p>
+          </div>
+          <div class="card">
+            <h3>Apprenticeship & Internships</h3>
+            <p class="small">Facilitation of apprenticeship programs and hands-on internships in local industries.</p>
+          </div>
+          <div class="card">
+            <h3>HR Consulting for MSMEs</h3>
+            <p class="small">Workforce planning, payroll onboarding templates, compliance guidance.</p>
+          </div>
+          <div class="card">
+            <h3>Candidate Register & Placement Support</h3>
+            <p class="small">Candidate database with skill tags, availability and placement tracking.</p>
+          </div>
+          <div class="card">
+            <h3>Campus Partnerships</h3>
+            <p class="small">Tie-ups with ITIs and vocational centres for direct placements and training.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Placements -->
+    <section id="placements" class="page">
+      <div class="card">
+        <h2>Success Stories & Placements</h2>
+        <p class="small">(Example entries — replace with real data)</p>
+        <div style="display:grid;grid-template-columns:repeat(3,1fr);gap:12px;margin-top:12px">
+          <div class="card"><strong>45</strong><div class="small">Candidates placed in manufacturing — 2025</div></div>
+          <div class="card"><strong>30</strong><div class="small">Apprenticeship conversions — 2024</div></div>
+          <div class="card"><strong>12</strong><div class="small">MSME partners onboarded</div></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Careers / Google Form embed -->
+    <section id="careers" class="page">
+      <div class="card">
+        <h2>Register as a Candidate</h2>
+        <p class="small">Please fill the short registration form below. We'll review and contact eligible candidates for assessment & placement.</p>
+
+        <!-- Replace FORM_EMBED_URL with your Google Form embed link -->
+        <div style="margin-top:12px">
+          <iframe id="gform" src="https://docs.google.com/forms/d/e/https://docs.google.com/forms/d/e/1FAIpQLSfCFIS7MFOUkXCYZZbVTKo0l6z_gHd4xp9aWVlo5O-GZoNkKA/viewform?usp=header/viewform?embedded=true" width="100%" height="700" frameborder="0">Loading…</iframe>
+        </div>
+
+        <p class="small" style="margin-top:10px">Don't have a Google Form yet? Create one in Google Forms, click "Send" → "<>" to get the embed link and paste the form ID in the iframe <code>src</code>.</p>
+      </div>
+    </section>
+
+    <!-- Contact -->
+    <section id="contact" class="page">
+      <div class="card">
+        <h2>Contact Us</h2>
+        <div class="two-col">
+          <div>
+            <p><strong>Workbridge Solutions</strong></p>
+            <p class="small">Phone: <a href="tel:+918448365477">+91 84483 65477</a></p>
+            <p class="small">Email: <a href="mailto:Workbridgesolutions@gmail.com">Workbridgesolutions@gmail.com</a></p>
+            <p class="small">We are available to consult local MSMEs on manpower planning, campus tie-ups and short-term training programs.</p>
+            <div style="margin-top:12px">
+              <a class="btn btn-whatsapp" href="https://wa.me/918448365477" target="_blank">Message on WhatsApp</a>
+            </div>
+          </div>
+          <div>
+            <h3>Quick message</h3>
+            <form class="contact-form" action="mailto:Workbridgesolutions@gmail.com" method="post" enctype="text/plain">
+              <input type="text" name="Name" placeholder="Your name" required>
+              <input type="email" name="Email" placeholder="Your email" required>
+              <textarea name="Message" placeholder="How can we help?" rows="5" required></textarea>
+              <button type="submit" class="btn btn-primary">Send</button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <footer>
+    <div>© <strong>Workbridge Solutions</strong> — Connecting Skills with Industries</div>
+    <div class="small">Made for MSMEs · Phone: +91 84483 65477 · <a href="mailto:Workbridgesolutions@gmail.com">Workbridgesolutions@gmail.com</a></div>
+  </footer>
+
+  <script>
+    // Simple client-side router for multi-page behavior
+    function showPage(hash){
+      const pages = document.querySelectorAll('.page');
+      pages.forEach(p=>p.classList.remove('active'));
+      let id = (hash||location.hash||'#home').replace('#','');
+      if(!id) id='home';
+      const el = document.getElementById(id);
+      if(el) el.classList.add('active');
+      // scroll to top
+      window.scrollTo({top:0,behavior:'smooth'});
+    }
+    window.addEventListener('hashchange', ()=> showPage(location.hash));
+    document.querySelectorAll('[data-link]').forEach(a=>{
+      a.addEventListener('click', (e)=>{
+        e.preventDefault();
+        const href = a.getAttribute('href');
+        history.pushState({},'',href);
+        showPage(href);
+      });
+    });
+    // initial
+    showPage(location.hash);
+  </script>
+</body>
+</html>
